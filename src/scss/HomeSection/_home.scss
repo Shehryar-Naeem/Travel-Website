@@ -1,0 +1,131 @@
+@use "../color" as *;
+section{
+    padding: 5rem 9%;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border: $border;
+    color: $white;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    &:hover{
+        background:$green;
+        color: $white;
+    }
+}
+.home{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+    .slide{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        &.active{
+            display:inline-block;
+        }
+        #pre{
+            position: absolute;
+            left: 2rem;
+            font-size: 10rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $white;
+        }
+        #next{
+            position: absolute;
+            right: 2rem;
+            font-size: 10rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $white;
+        }
+    }
+    .inactive{
+        display: none;
+    }
+
+
+    .box{
+            padding: 2rem 9%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            justify-content:  flex-end;
+            object-fit: cover;
+            &.second{
+                justify-content: flex-start;
+            }
+            .content{
+                width: 50rem;
+                span{
+                    font-size: 4rem;
+                    color: $white;
+                    font-weight: bold;
+                }
+                h1{
+                    font-size: 6rem;
+                    color: $green;
+                    padding-top: 0.5rem;
+                    text-transform: capitalize;
+                }
+                p{
+                    line-height: 2;
+                    color: $white;
+                    font-size: 1.5rem;
+                    padding: 1rem 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+    }
+    
+    
+
+@media (max-width:1200px) {
+    section{
+        padding: 3rem 2rem;
+    }
+    
+}   
+
+@media (max-width:991px) {
+    .home #pre{
+        display: none;
+    }
+    #next{
+        display: none;
+    }
+    .home .box{
+        
+        padding: 2rem;
+        justify-content: center;
+        background-position: right !important;
+        &.second{
+            justify-content: center;
+            background-position: left !important;
+        }
+        .content{
+            text-align: center;
+            span{
+                font-size: 3rem;
+            }
+            h1{
+                font-size: 4rem;
+            }
+
+        }
+    }
+}

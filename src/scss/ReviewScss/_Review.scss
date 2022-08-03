@@ -1,0 +1,42 @@
+@use  "../color" as *;
+
+.review{
+    .slide{
+        .text{
+            padding: 2rem;
+            background:$light-bg;
+            font-size: 2rem;
+            border-radius: 0.5rem;
+            color: $black;
+            line-height: 2;
+            z-index: 0;
+            position: relative;
+            margin-bottom: 3rem;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -1.5rem;
+                left: 0.7rem;
+                background: $light-bg;
+                width: 3rem;
+                height: 3rem;
+                transform: rotate(45deg);
+            }
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        h3{
+            font-size: 2rem;
+            color: $black;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.5rem;
+            color: $green;
+            font-weight: bold;
+        }
+    }
+}

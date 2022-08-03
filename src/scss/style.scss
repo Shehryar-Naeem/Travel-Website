@@ -1,0 +1,25 @@
+@use "./color";
+@use  "./NavComponentCss/Header";
+@use  "./HomeSection//home";
+@use "./CategorySec/Category";
+@use  "./Aboutscss/About";
+@use  "./ShopSCSs/Shop";
+@use "./PackagesScss/Packages";
+@use  "./ServicesSCss/Services";
+@use  "./ReviewScss/Review";
+@use "./Blogscss/Blog";
+@use "./Newletter/Newsetter";
+@use "./FooterScss/Footer";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@200&display=swap');
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}

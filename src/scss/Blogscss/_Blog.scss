@@ -1,0 +1,56 @@
+@use "../color" as *;
+.blog{
+    .slide{
+        text-align: center;
+        padding: 2rem;
+        img{
+            border-radius: 0.5rem;
+        }
+        .icons{
+            background-color: $black;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            position: relative;
+            top: -2rem;
+            display: inline-block;
+            a{
+                font-size: 1.4rem;
+                color: $white;
+                margin:0 1rem;
+
+                &:hover{
+                    color:$green;
+                }
+                i{
+                    padding-right: 0.5rem;
+                    color: $green;
+                }
+            }
+        }
+        h3{
+            font-size: 2rem;
+            color: $black;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            line-height: 2;
+            color: $black;
+            font-weight: bold;
+        }
+        button{
+            padding: 0.5rem 1rem;
+            color: green;
+            outline: none;
+            background: none;
+            border: $border;
+            font-weight: bold;
+            font-size: 2rem;
+            &:hover{
+                background: $green;
+                color: $white;
+            }
+        }
+    }
+}

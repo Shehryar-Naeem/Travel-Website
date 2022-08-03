@@ -1,0 +1,39 @@
+@use "../color" as *;
+
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: $black;
+}
+.category{
+    .box_container{
+        @include grid(35rem);
+        .box{
+            text-align:center;
+            padding: 1rem;
+            img{
+                height: 20rem;
+                width: 20rem;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+            h3{
+                font-size: 3rem;
+                color: $green;
+            }
+            p{
+                font-size: 2rem;
+                color: $green;
+                padding: 1rem 0;
+                line-height: 2;
+            }
+            .btn{
+                color: $black;
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

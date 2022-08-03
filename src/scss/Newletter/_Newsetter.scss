@@ -1,0 +1,49 @@
+@use "../color" as *;
+
+.newsletter{
+    background: $light-bg;
+    .content{
+        max-width: 35rem;
+        margin: 1rem auto;
+        text-align: center;
+        p{
+            font-size: 2rem;
+            line-height: 2;
+            color: $black;
+            font-weight: bold;
+
+        }
+        form{
+            margin-top: 2rem;
+            background:$white;
+            border-radius: 5rem;
+            border: $border;
+            padding: 0.7rem;
+            display: flex;
+            .email{
+                width: 100%;
+                background:none;
+                text-transform: none;
+                font-size: 1.5rem;
+                color: $black;
+                padding: 0 1.3rem;
+                font-weight: bold;
+            }
+            button{
+                background: none;
+                margin-top: 0;
+                border-radius: 5rem;
+                color: $black;
+                border: 2px solid $black;
+                padding: 0.5rem 1rem;
+                font-weight: bold;
+                &:hover{
+                    background: $black;
+                    color: $white;
+
+                }
+
+            }
+        }
+    }
+}
